@@ -10,6 +10,7 @@ body {
   width: 1220px;
   margin: auto;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -84,4 +85,47 @@ h4 {
   padding-bottom: 10px;
   font-weight: 300;
   font-size: 12px;
+}
+
+/* company worked with */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(150px, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+  width: max-content;
+  animation: slide 20s linear infinite;
+}
+
+.logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
