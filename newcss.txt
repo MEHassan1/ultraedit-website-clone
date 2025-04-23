@@ -1,0 +1,137 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Noto Sans";
+}
+
+.container {
+  width: 1220px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+
+.navitem ul {
+  display: flex;
+}
+
+.navitem ul li {
+  padding-right: 25px;
+  list-style-type: none;
+}
+
+.navitem ul li a {
+  text-decoration: none;
+  color: #4e4e4e;
+  font-size: 15px;
+}
+
+/* logo design */
+.logo img {
+  width: 174px;
+  height: 70px;
+}
+
+/* <!-- card section code started from here --> */
+
+.container2 {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 10px;
+  max-width: 302px;
+  max-height: 210px;
+  box-sizing: border-box;
+}
+.card p {
+  word-wrap: break-word; /* Breaks long words */
+}
+
+.button {
+  padding: 8px 15px;
+}
+.btn a {
+  background-color: #5cb85c;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.hash {
+  font-size: 8px;
+}
+
+h4 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* company worked with */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(150px, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+  width: max-content;
+  animation: slide 20s linear infinite;
+}
+
+.logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* <!-- Animation pratrice --> */
+
+.ani{
+  
+}
